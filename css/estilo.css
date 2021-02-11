@@ -15,6 +15,10 @@ a:hover{
   border-bottom-color: transparent;
 }
 
+img{
+  max-width: 100%;
+}
+
 p{
   margin: 0 0 2em;
 }
@@ -101,27 +105,31 @@ li{
   color: #49bf9d;
 }
 
-input, label, textarea{
+input, label, textarea, select{
   display: inline-block;
   width: 100%;
   box-sizing: border-box;
 }
-
-input, textarea{
+input, textarea, select{
   background: rgb(238, 238, 238);
   padding: 15px;
   border-radius: 5px;
   border: 3px solid transparent;
   margin-bottom: 15px;
 }
-
+input[type="radio"], input[type="checkbox"]{
+  width: auto;
+}
 textarea{
   height: 10em;
 }
-
 input:focus, textarea:focus{
   border: 3px solid #49bf9d;
   outline: none;
+}
+
+.imagem-link{
+  border: 0;
 }
 
 .button-default{
@@ -209,7 +217,10 @@ input:focus, textarea:focus{
 
 .main-header-link{
   color: inherit;
-  
+}
+.main-header-link img{
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .main-header-link:hover{
@@ -222,6 +233,12 @@ input:focus, textarea:focus{
   padding: 124px 54px 72px;
   box-sizing: border-box;
 }
+
+.recent-works-card img{
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 /*Grid*/
 .row{
   overflow: auto;
