@@ -97,33 +97,43 @@
         neque lorem ipsum dolor.
       </p>
 
-      <form action="#" method="POST">
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name">
-        
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-        
-        <label for="mensagem">Digite sua mensagem</label>
-        <textarea name="mensagem" id="mensagem"></textarea>
-
-        <input type="submit" value="Enviar">
-      </form>
-
-      <address>
-        <p>
-          <span>Endereço</span>
-          1234 Somewhere Rd. Nashville, TN 00000 United States
-        </p>
-        <p>
-          <span>Telefone</span> 
-          000-000-000
-        </p>
-        <p>
-          <span>E-mail</span>
-          email@server.com
-        </p>
-      </address>
+      <div class="row">
+        <div class="col-2-3">
+          <form action="#" method="POST">
+            <div class="row">
+              <div class="col-2">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+              </div>
+              <div class="col-2">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </div>
+            </div>
+            
+            <label for="mensagem">Digite sua mensagem</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+    
+            <input type="submit" value="Enviar" class="button-default-big button-default button-default-stroke">
+          </form>
+        </div>
+        <div class="col-1-3">
+          <address>
+            <p>
+              <span>Endereço</span>
+              1234 Somewhere Rd. Nashville, TN 00000 United States
+            </p>
+            <p>
+              <span>Telefone</span> 
+              000-000-000
+            </p>
+            <p>
+              <span>E-mail</span>
+              email@server.com
+            </p>
+          </address>
+        </div>
+      </div>
     </section>
 
     <section class="main-content-section">
@@ -202,7 +212,7 @@
         </div>
       </div>
 
-      <h5>Actions</h5>
+      <h4>Actions</h5>
       <div class="row">
         <div class="col-2">
           <p>
