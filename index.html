@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="main-header">
-    <a href="index.html" class="main-header-link">
+    <a href="index.html" class="main-header-link imagem-link">
       <img src="images/avatar.jpg" alt="">
     </a>
     <h1 class="main-header-title">
@@ -38,55 +38,60 @@
     <section class="main-content-section">
       <h3>Recent Work</h3>
 
-      <article class="recent-works-card">
-        <a href="images/fulls/01.jpg">
-          <img src="images/thumbs/01.jpg" alt="descrição">
-        </a>
-        <p class="recent-works-card-title">Magna sed consequat tempus</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
+      <div class="row">
+        <div class="col-2">
+          <article class="recent-works-card">
+            <a href="images/fulls/01.jpg" class="imagem-link">
+              <img src="images/thumbs/01.jpg" alt="descrição">
+            </a>
+            <p class="recent-works-card-title">Magna sed consequat tempus</p>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+    
+          <article class="recent-works-card">
+            <a href="images/fulls/02.jpg" class="imagem-link">
+              <img src="images/thumbs/02.jpg" alt="descrição">
+            </a>
+            <p class="recent-works-card-title">Ultricies lacinia interdum</p>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+    
+          <article class="recent-works-card">
+            <a href="images/fulls/03.jpg" class="imagem-link">
+              <img src="images/thumbs/03.jpg" alt="descrição">
+            </a>
+            <p class="recent-works-card-title">Tortor metus commodo</p>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+        </div>
+        <div class="col-2">
+          <article class="recent-works-card">
+            <a href="images/fulls/04.jpg" class="imagem-link">
+              <img src="images/thumbs/04.jpg" alt="descrição">
+            </a>
+            <p class="recent-works-card-title">Quam neque phasellus</p>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+    
+          <article class="recent-works-card">
+            <a href="images/fulls/05.jpg" class="imagem-link">
+              <img src="images/thumbs/05.jpg" alt="descrição">
+            </a>
+            <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+    
+          <article class="recent-works-card">
+            <a href="images/fulls/06.jpg" class="imagem-link">
+              <img src="images/thumbs/06.jpg" alt="descrição">
+            </a>
+            <p class="recent-works-card-title">Risus ornare lacinia</p>
+            <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
+          </article>
+        </div>
+      </div>
 
-      <article class="recent-works-card">
-        <a href="images/fulls/02.jpg">
-          <img src="images/thumbs/02.jpg" alt="descrição">
-        </a>
-        <p class="recent-works-card-title">Ultricies lacinia interdum</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-
-      <article class="recent-works-card">
-        <a href="images/fulls/03.jpg">
-          <img src="images/thumbs/03.jpg" alt="descrição">
-        </a>
-        <p class="recent-works-card-title">Tortor metus commodo</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-
-      <article class="recent-works-card">
-        <a href="images/fulls/04.jpg">
-          <img src="images/thumbs/04.jpg" alt="descrição">
-        </a>
-        <p class="recent-works-card-title">Quam neque phasellus</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-
-      <article class="recent-works-card">
-        <a href="images/fulls/05.jpg">
-          <img src="images/thumbs/05.jpg" alt="descrição">
-        </a>
-        <p class="recent-works-card-title">Nunc enim commodo aliquet</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-
-      <article class="recent-works-card">
-        <a href="images/fulls/06.jpg">
-          <img src="images/thumbs/06.jpg" alt="descrição">
-        </a>
-        <p class="recent-works-card-title">Risus ornare lacinia</p>
-        <p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-      </article>
-
-      <a href="#" title="Veja portifolio completo" class="button-default">Veja Portifolio completo</a>
+      <a href="#" title="Veja portifolio completo" class="button-default button-default-big">Veja Portifolio completo</a>
     
     </section >
 
@@ -97,33 +102,43 @@
         neque lorem ipsum dolor.
       </p>
 
-      <form action="#" method="POST">
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name">
-        
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
-        
-        <label for="mensagem">Digite sua mensagem</label>
-        <textarea name="mensagem" id="mensagem"></textarea>
-
-        <input type="submit" value="Enviar">
-      </form>
-
-      <address>
-        <p>
-          <span>Endereço</span>
-          1234 Somewhere Rd. Nashville, TN 00000 United States
-        </p>
-        <p>
-          <span>Telefone</span> 
-          000-000-000
-        </p>
-        <p>
-          <span>E-mail</span>
-          email@server.com
-        </p>
-      </address>
+      <div class="row">
+        <div class="col-2-3">
+          <form action="#" method="POST">
+            <div class="row">
+              <div class="col-2">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name">
+              </div>
+              <div class="col-2">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </div>
+            </div>
+            
+            <label for="mensagem">Digite sua mensagem</label>
+            <textarea name="mensagem" id="mensagem"></textarea>
+    
+            <input type="submit" value="Enviar" class="button-default-big button-default button-default-stroke">
+          </form>
+        </div>
+        <div class="col-1-3">
+          <address>
+            <p>
+              <span>Endereço</span>
+              1234 Somewhere Rd. Nashville, TN 00000 United States
+            </p>
+            <p>
+              <span>Telefone</span> 
+              000-000-000
+            </p>
+            <p>
+              <span>E-mail</span>
+              email@server.com
+            </p>
+          </address>
+        </div>
+      </div>
     </section>
 
     <section class="main-content-section">
@@ -202,26 +217,29 @@
         </div>
       </div>
 
-      <h5>Actions</h5>
-      <p>
-        <a href="#" class="button-default">Default</a>
-        <a href="#" class="button-default button-default-stroke">Default</a>
-      </p>
-
-      <p>
-        <a href="#" class="button-default button-default-small">Default</a>
-        <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
-      </p>
-
-      <p>
-        <a href="#" class="button-default button-default-full">Default</a>
-        <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
-      </p>
-
-      <p>
-        <a href="#" class="button-default button-default-small button-default-full">Default</a>
-        <a href="#" class="button-default button-default-small button-default-full button-default-stroke">Default</a>
-      </p>
+      <h4>Actions</h5>
+      <div class="row">
+        <div class="col-2">
+          <p>
+            <a href="#" class="button-default">Default</a>
+            <a href="#" class="button-default button-default-stroke">Default</a>
+          </p>
+          <p>
+            <a href="#" class="button-default button-default-small">Default</a>
+            <a href="#" class="button-default button-default-small button-default-stroke">Default</a>
+          </p>
+        </div>
+        <div class="col-2">
+          <p>
+            <a href="#" class="button-default button-default-full">Default</a>
+            <a href="#" class="button-default button-default-full button-default-stroke">Default</a>
+          </p>
+          <p>
+            <a href="#" class="button-default button-default-small button-default-full">Default</a>
+            <a href="#" class="button-default button-default-small button-default-full button-default-stroke">Default</a>
+          </p>
+        </div>
+      </div>
 
       <h4>Table</h4>
 
@@ -270,7 +288,7 @@
       </table>
 
       <h5>Alternate</h5>
-      <table class="table-alternate">
+      <table class="table table-alternate">
         <thead>
           <tr>
             <th>Name</th>
@@ -313,7 +331,7 @@
         </tbody>
       </table>
 
-      <h5>Buttons</h5>
+      <h4>Buttons</h5>
       <p>
         <button class="button-default">Default</button>
         <button class="button-default button-default-stroke">Default</button>
@@ -335,7 +353,7 @@
       </p>
       <input type="submit" class="button-default" value="mandar">
 
-      <h5>Forms</h5>
+      <h4>Forms</h5>
       <form action="#" method="POST">
         <label for="name">Nome</label>
         <input type="text" form="name" id="name">
@@ -360,8 +378,8 @@
         <label for="msg">Mensagem:</label>
         <textarea placeholder="Digite uma mensagem" id="msg"></textarea>
 
-        <input type="submit" class="button-default" value="Send Message">
-        <input type="reset" class="button-default button-default-stroke" value="Reset">
+        <input type="submit" class="button-default button-default-big" value="Send Message">
+        <input type="reset" class="button-default button-default-big button-default-stroke" value="Reset">
       </form>
     </section>
 
