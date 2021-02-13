@@ -57,6 +57,12 @@ blockquote{
   margin: 2em 0;
   padding: .5em 0 .5em 1.5em;
 }
+blockquote p{
+  margin-bottom: .5em;
+}
+blockquote p:last-child{
+  margin-bottom: 0;
+}
 
 code{
   background: #f7f7f7;
@@ -103,6 +109,14 @@ li{
   display: inline-block;
   font-size: 20px;
   color: #49bf9d;
+}
+
+.hidden{
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  /* visibility: hidden; */
+  display: block;
 }
 
 input, label, textarea, select{
@@ -282,6 +296,9 @@ input:focus, textarea:focus{
   border: 0;
   color: #9c9c9c;
 }
+.icon-link:hover{
+  color: #c4c4c4;
+}
 
 .copyright li{
   display: inline;
@@ -292,6 +309,9 @@ input:focus, textarea:focus{
 .copyright a{
   font-weight: bold;
   color: inherit;
+}
+.copyright a:hover{
+  color: #c4c4c4;
 }
 
 /*Grid*/
