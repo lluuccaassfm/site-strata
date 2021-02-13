@@ -245,6 +245,16 @@ input:focus, textarea:focus{
   box-sizing: border-box;
 }
 
+.main-footer{
+  position: fixed;
+  bottom: 0;
+  width: 35%;
+  left: 0;
+  padding: 0 54px 72px 0;
+  box-sizing: border-box;
+  text-align: right;
+}
+
 .recent-works-card img{
   border-radius: 10px;
   overflow: hidden;
@@ -266,6 +276,22 @@ input:focus, textarea:focus{
 .img-right{
   float: right;
   margin: 1%;
+}
+
+.icon-link{
+  border: 0;
+  color: #9c9c9c;
+}
+
+.copyright li{
+  display: inline;
+}
+.copyright li:first-child::after{
+  content: " |";
+}
+.copyright a{
+  font-weight: bold;
+  color: inherit;
 }
 
 /*Grid*/
